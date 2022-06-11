@@ -1,0 +1,18 @@
+modules:
+  confluence:contentBylineItem:
+    - key: forge-locally-hello-world-content-byline-item
+      resource: main
+      resolver:
+        function: resolver
+      viewportSize: medium
+      title: forge-locally
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+     tunnel:
+      port: 3000
+app:
+  id: ari:cloud:ecosystem::app/3297b8ce-9c2c-49a8-b092-39026f9a5d65
